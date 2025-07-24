@@ -402,6 +402,8 @@ nav.active {
 }
 
 .banner {
+    position:absolute;
+    left:0;
     width: 100vw;
     height: 50px;
     background-color: #2a2a6a ;
@@ -416,6 +418,7 @@ nav.active {
 .banner-content {
     white-space: nowrap;
     display: inline-block;
+    position:absolute;
     left: 0;
     animation: scrollBanner 120s linear infinite;
     font-size: 1.6rem;
@@ -431,7 +434,7 @@ nav.active {
     0% {
         transform: translate(0);
     }
-    50% {
+    100% {
         transform: translate(-50%);
     }
     
