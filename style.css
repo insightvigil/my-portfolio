@@ -1,6 +1,4 @@
 
-
-
 /* ------   General -----*/
 
 html {
@@ -16,7 +14,7 @@ html {
     padding: 0;
     margin: 0;
     font-family: "Fira Sans",sans-serif;
-    color: var(--on-background);
+    color: white;
 }
     
 
@@ -367,6 +365,9 @@ nav.active {
     display: grid;
     place-items: center;
     padding: 100px;
+    height: 30vh;
+    margin-bottom: 60px;
+    
     
 }
 
@@ -397,7 +398,7 @@ nav.active {
     width: 100%;
     position: relative;
     text-decoration: none;
-    margin-bottom: 36px;
+    margin-bottom: 55px;
 }
 
 .banner {
@@ -415,7 +416,6 @@ nav.active {
 .banner-content {
     white-space: nowrap;
     display: inline-block;
-    position: absolute;
     left: 0;
     animation: scrollBanner 120s linear infinite;
     font-size: 1.6rem;
@@ -455,7 +455,7 @@ nav.active {
 }
 
 .media-container hr{
-    margin-top: 1rem;
+    margin-top: .5rem;
     width: 12%;
     border: 0;
     border-top: 2px solid;
@@ -464,7 +464,7 @@ nav.active {
 
 .social-media-icons {
     width: 100%;
-    font-size: 2.2rem;
+    font-size: 1.92rem;
     display: flex;
     justify-content: center;
 }
@@ -489,10 +489,94 @@ footer {
     align-items: center;
     justify-content: center;
     color: white;
-    margin: 10px 0
+    margin: 10px 0;
 }
 
 
 footer small {
     text-align: center;
+    font-weight: bolder;
+}
+
+/* Media Queries  */ 
+
+/*All mobile devices*/
+@media screen and (max-width:1024px)  {
+
+    nav {
+        width: 100vw;
+        background: black;
+    }
+
+        nav ul {
+        height: 100vh;
+    }
+    
+}
+
+/*Table Vertical (Large) */
+@media screen and (orientation:portrait) and (max-width:1024px) {
+
+    .about-grid {
+        width: 80vw;
+    }
+
+    .text-box {
+        padding: 50px;
+    }
+
+    .projects-grid {
+        margin: 0 10px;
+    }
+
+}
+
+/*Table Horizontal */
+
+@media screen and (min-width: 768px) and (max-width:1180px) and (orientation: landscape) {
+    .about-grid {
+        width: 80vw;
+    }
+
+    .text-box {
+        width: 75ch;
+        padding: 50px;
+    }
+
+    .projects-grid {
+        margin: 0 10px;
+    }
+}
+
+/*Smart Phone Horizontal*/
+
+@media screen and (min-width: 600px) and (max-width:950px) and (orientation: landscape){
+    .banner-link {
+        margin-bottom: 44px;
+    }
+}
+
+/*Smartphone Vertical*/
+@media screen and (max-width:600px) and (orientation: portrait){
+
+    .page-title h1 {
+        font-size: 3.0rem;
+        width: 40vh;
+
+    }
+
+    section-title h2 {
+        font-size: 4.8rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        width: 100vw;
+
+    }
+
+    .box1,.box2,.box3,.box4,.box5,.box6 {
+        grid-area: unset;
+        grid-column: 1;
+    }
 }

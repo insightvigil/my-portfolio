@@ -39,4 +39,3 @@ let repeatedMessage = messageHTML.repeat(10);
 
 //Set the repeated messages as the content
 bannerContent.innerHTML = repeatedMessage + repeatedMessage;
-
