@@ -425,23 +425,23 @@ nav.active {
     transition: font-size .3s ease-in-out;
 
     &:hover {
-        font-size: 1.8rem;
+        font-size: 1.68rem;
     }
 }
 
 
 @keyframes scrollBanner {
     0% {
-        transform: translate(0);
+        transform: translateX(0);
     }
     100% {
-        transform: translate(-50%);
+        transform: translateX(-50%);
     }
     
 }
 
 .contact-message {
-    margin-right: 50px
+    margin-right: 50px;
 }
 
 
