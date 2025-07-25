@@ -342,12 +342,20 @@ nav.active {
         cursor: pointer;
     }
 
+
+
 .mockup {
     transition: transform 0.2s;
     &:hover{
         transform: scale(1.05);
     }
 }
+
+
+.mockup figcaption {
+        position: relative;
+        bottom: 60px;
+    }
 
 .github-link, .live-link {
     margin: 8px 12px;
