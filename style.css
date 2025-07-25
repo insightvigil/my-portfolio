@@ -422,10 +422,10 @@ nav.active {
     left: 0;
     animation: scrollBanner 120s linear infinite;
     font-size: 1.6rem;
-    transition: font-size .3s ease-in-out;
+    transition: color .3s ease-in-out;
 
     &:hover {
-        font-size: 1.68rem;
+        color:white
     }
 }
 
