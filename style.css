@@ -354,8 +354,14 @@ nav.active {
 
 .mockup figcaption {
         position: relative;
-        bottom: 60px;
+        margin-top: 1.2rem;
+        
     }
+
+.mockup figcaption p {
+    margin-top: .6rem;
+}
+
 
 .github-link, .live-link {
     margin: 8px 12px;
@@ -370,6 +376,10 @@ nav.active {
         background-color: #333;
         
     }
+}
+
+div.link-container {
+    margin-top: 2.4rem;
 }
 
 /*Contact Section*/
